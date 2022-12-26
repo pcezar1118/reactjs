@@ -1,6 +1,6 @@
 import React from "react";
 
-function topo(){
+function header(){
     return(
 <>
 <div>
@@ -10,4 +10,4 @@ function topo(){
     );
 }
 
-export default topo;
+export default header;
