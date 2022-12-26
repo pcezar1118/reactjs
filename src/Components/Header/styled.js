@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AreaHeader = styled.div`
 
 height: 60px;
-background-color: purple;
+background-image: linear-gradient(to right, #Fe5D26, #370d44);
 color: white;
 
 
@@ -32,6 +32,15 @@ nav{
     li{
         list-style: none;
         margin-left: 20px;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+
+            &:hover{
+                color: #F5BB00;
+            }
+        }
     }
 }
 `;
