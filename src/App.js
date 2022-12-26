@@ -1,14 +1,19 @@
 import React from 'react';
 
-import header from './components/Header';
-import footer from './components/footer';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+
+import './App.css';
 
 function App() {
   return (
     <>
-    <header />
+    <Header />
+ 
+    <div>Páginas</div>
 
-    <footer />
+
+    <Footer />
     </>
   )
 }
