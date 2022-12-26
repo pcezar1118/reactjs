@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const AreaHeader = styled.div`
+
 height: 60px;
 background-color: purple;
 color: white;
-`
+
 
 .container{
 padding: 5px 20px;
@@ -14,6 +15,7 @@ align-items: center;
 
 .logo{
 flex: 1;
+
 img{
     width: 45px;
 }
@@ -32,3 +34,4 @@ nav{
         margin-left: 20px;
     }
 }
+`;

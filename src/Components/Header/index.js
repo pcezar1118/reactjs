@@ -7,7 +7,7 @@ function Header(){
 <AreaHeader>
 <div className="container">
     <div className="logo">
-        <img src = "../../../logo.png"></img>
+        <img src = "../../../favicon.ico" />
 
     </div>
 <nav>
@@ -17,7 +17,7 @@ function Header(){
     </ul>
 </nav>
 </div>
-<AreaHeader/>
+</AreaHeader>
     );
 }
 

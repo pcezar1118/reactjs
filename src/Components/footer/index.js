@@ -6,7 +6,7 @@ function Footer(){
     return(
         <AreaFooter>
         Todos os direitos reservados.
-        <AreaFooter/>
+        </AreaFooter>
     );
 }
 
