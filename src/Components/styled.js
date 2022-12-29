@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import Styled from "styled-components";
 
-export const BtnDefaultIcons = styled.button`
+export const BtnDefaultIcons = Styled.button`
 
 display: flex;
 align-items: center;
@@ -24,7 +24,7 @@ transition: 0.4s;
 }
 `;
 
-export const BtnDefault = styled(BtnDefaultIcons)`
+export const BtnDefault = Styled(BtnDefaultIcons)`
 
 background-color: #7d2ae8;
 color: #fff;

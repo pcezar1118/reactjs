@@ -3,8 +3,8 @@ import { BrowserRouter, Link } from 'react-router-dom';
 
 import { AreaLogin } from './styled';
 
-import { BtnDefaultIcons } from '../../Components/styled';
-import { BtnDefault } from '../../Components/styled';
+import { BtnDefaultIcons } from '../../Components/Styled';
+import { BtnDefault } from '../../Components/Styled';
 
 
 import FacebookIcon from '@mui/icons-material/Facebook';
