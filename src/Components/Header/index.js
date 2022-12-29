@@ -6,6 +6,13 @@ import { AreaHeader } from './styled';
 function Header(){
     return(
 <AreaHeader>
+
+<div className="container">
+    <div className="menu">
+        <img src = "../../../menu_FILLO_wght400_GRAD0_opsz48.png" />
+
+    </div>
+
 <div className="container">
     <div className="logo">
         <img src = "../../../favicon.ico" />
@@ -18,6 +25,7 @@ function Header(){
         <li><Link to="/logout">Sair</Link></li>
     </ul>
 </nav>
+</div>
 </div>
 </AreaHeader>
     );
