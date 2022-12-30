@@ -23,7 +23,7 @@ export default () => {
                 Crie sua conta</h1>
 
             <p>Crie sua conta, é grátis!</p>
-            </AreaLogin>
+            
             <form>
                 <div className="form-input">
                     <label>Nome</label>
@@ -44,10 +44,20 @@ export default () => {
                     <input type="password" />
                 </div>
             </form>
-            
+            <BtnDefault>Comece agora!</BtnDefault>
+
+            <div className="footerLogin">Já tem uma conta? 
+            <Link to="/*">Fazer login!</Link>
+            </div>
+         </AreaLogin>   
             </Route>
+        </Switch>
         
 
+           
+
+
+            
             <Route exact path="/*">
             <AreaLogin>
         <h1>Faça login em sua conta</h1>
@@ -78,51 +88,16 @@ export default () => {
                 </div>
             </form>
 
-            <BtnDefault>Comece agora!</BtnDefault>
-
-            <div className="footerLogin">Não tem uma conta? 
-            <Link to="/registrar">Fazer login</Link>
-            </div>
-        
-        </AreaLogin>
-</Route>
-        </Switch>
-        <AreaLogin>
-        <h1>Faça login em sua conta</h1>
-        
-        <BtnDefaultIcons>
-            <FacebookIcon />
-            <div className="center">Fazer login com o Facebook</div>
-            </BtnDefaultIcons>
-        
-            <BtnDefaultIcons>
-            <GoogleIcon />
-            <div className="center">Fazer login com o Google</div>
-            </BtnDefaultIcons>
-
-            <p>OU</p>
-
-            <form>
-                <div className="form-input">
-                    <label>E-mail</label>
-                    <input type="email" />
-                </div>
-            </form>
-        
-            <form>
-                <div className="form-input">
-                    <label>Senha</label>
-                    <input type="password" />
-                </div>
-            </form>
-
-            <BtnDefault>Entrar</BtnDefault>
+            <BtnDefault>Fazer login!</BtnDefault>
 
             <div className="footerLogin">Não tem uma conta? 
             <Link to="/registrar">Registre-se</Link>
             </div>
         
         </AreaLogin>
+</Route>
+
+    
         </BrowserRouter>
     );
 }
