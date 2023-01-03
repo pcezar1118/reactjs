@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Link  } from 'react-router-dom';
 
+import Api from '../../Api';
+
 import { AreaLogin } from './styled';
 
 import { BtnDefaultIcons } from '../../Components/Styled';
@@ -13,52 +15,60 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 
 export default () => {
+
+    const actionLoginGoogle = async () => {
+        let result = Api.googleLogar();
+
+        if(result){
+
+        }else{
+            alert('Error');
+        }
+    }
+    
     return(
+        
         <BrowserRouter>
         <Switch>
             <Route exact path="/registrar">
             <AreaLogin>
             <h1 className="organize">
-                <Link to className="/"><MenuOpenIcon /></Link>
+                <Link to="/"><MenuOpenIcon /></Link>
                 Crie sua conta</h1>
 
             <p>Crie sua conta, é grátis!</p>
             
             <form>
-                <div className="form-input">
+                <div className="form--imput">
                     <label>Nome</label>
                     <input type="text" />
                 </div>
             </form>
         
             <form>
-                <div className="form-input">
+                <div className="form--imput">
                     <label>E-mail</label>
                     <input type="email" />
                 </div>
             </form>
             
             <form>
-                <div className="form-input">
+                <div className="form--imput">
                     <label>Senha</label>
                     <input type="password" />
                 </div>
-            </form>
+            
             <BtnDefault>Comece agora!</BtnDefault>
 
             <div className="footerLogin">Já tem uma conta? 
-            <Link to="/*">Fazer login!</Link>
+            <Link to="/">Fazer login!</Link>
             </div>
+            </form>
          </AreaLogin>   
             </Route>
-        </Switch>
         
-
-           
-
-
-            
-            <Route exact path="/*">
+        
+           <Route exact path="/*">
             <AreaLogin>
         <h1>Faça login em sua conta</h1>
         
@@ -67,7 +77,7 @@ export default () => {
             <div className="center">Fazer login com o Facebook</div>
             </BtnDefaultIcons>
         
-            <BtnDefaultIcons>
+            <BtnDefaultIcons onClick={actionLoginGoogle}>
             <GoogleIcon />
             <div className="center">Fazer login com o Google</div>
             </BtnDefaultIcons>
@@ -75,14 +85,14 @@ export default () => {
             <p>OU</p>
 
             <form>
-                <div className="form-input">
+                <div className="form--imput">
                     <label>E-mail</label>
                     <input type="email" />
                 </div>
             </form>
         
             <form>
-                <div className="form-input">
+                <div className="form--imput">
                     <label>Senha</label>
                     <input type="password" />
                 </div>

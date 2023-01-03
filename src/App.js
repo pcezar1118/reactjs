@@ -14,9 +14,20 @@ function App() {
 
   const [user, setUser] = useState(null);
 
-    if (user === null){
+  const actionLoginDataGoogle = (u) => {
+let newUser = {
+  id: u.id,
+  name: u.displayName,
+  avatar: u.photoURL
+}
+
+setUser(newUser)
+  
+}
+    
+  if (user === null){
       return(
-        <Login />
+        <Login onReceiveGoogle={actionLoginDataGoogle} />
       )
     }
   return (
