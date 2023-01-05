@@ -24,6 +24,8 @@ img{
 
 nav{
 
+    display: flex;
+
     ul{
         display: flex;
 
@@ -39,6 +41,30 @@ nav{
 
             &:hover{
                 color: #F5BB00;
+            }
+        }
+    }
+
+    .avatar{
+        display: flex;
+        align-items: center;
+
+        img{
+           width: 35px;
+           border-radius: 20px;
+           margin-left: 20px;
+           margin-right: 10px;
+        }
+
+        label{
+           font-size: 14px;
+           cursor: pointer;
+           color: #ccc;
+        }
+
+        @media screen and (max-width: 600px){
+            label{
+                display: none;
             }
         }
     }

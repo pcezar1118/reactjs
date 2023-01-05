@@ -7,9 +7,9 @@ import firebaseConfig from './firebaseConfig';
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 
-expor default {
+export default {
 
-    googleLogar; async () => {
+    googleLogar: async () => {
         const provider = new firebase.auth.GoogleAuthProvider();
         let result = await firebase.auth().signInWithPopUp(provider);
         return result;

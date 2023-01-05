@@ -14,13 +14,13 @@ import GoogleIcon from '@mui/icons-material/Google';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 
-export default () => {
+export default ({onReceiveGoogle}) => {
 
     const actionLoginGoogle = async () => {
-        let result = Api.googleLogar();
+        let result = await Api.googleLogar();
 
         if(result){
-
+            onReceiveGoogle(result.user);
         }else{
             alert('Error');
         }
@@ -106,7 +106,7 @@ export default () => {
         
         </AreaLogin>
 </Route>
-
+</Switch>
     
         </BrowserRouter>
     );

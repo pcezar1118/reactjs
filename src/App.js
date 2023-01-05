@@ -14,14 +14,14 @@ function App() {
 
   const [user, setUser] = useState(null);
 
-  const actionLoginDataGoogle = (u) => {
+  const actionLoginDataGoogle = async (u) => {
 let newUser = {
-  id: u.id,
+  id: u.uid,
   name: u.displayName,
   avatar: u.photoURL
 }
 
-setUser(newUser)
+setUser(newUser);
   
 }
     
@@ -32,7 +32,7 @@ setUser(newUser)
     }
   return (
     <BrowserRouter>
-    <Header />
+    <Header user={user} />
  
     <Routes />
 
