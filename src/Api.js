@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firebase-auth';
 import 'firebase/firebase-firestore';
+//import { firebaseapp, firebaseauth, firebasefirestore} from 'firebase/app';
 
 import firebaseConfig from './firebaseConfig';
 
