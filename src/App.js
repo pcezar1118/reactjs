@@ -29,7 +29,7 @@ setUser(newUser);
   if (user === null){
       return(
         <Login onReceiveGoogle={actionLoginDataGoogle} />
-      )
+      );
     }
   return (
     <BrowserRouter>
